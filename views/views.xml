@@ -6,11 +6,11 @@
       <field name="name">vschool list</field>
       <field name="model">res.partner</field>
       <field name="type">form</field>
-    
+    <field name="inherit_id" ref="base.view_partner_form"/>
       <field name="arch" type="xml">
-
+   <field name="phone" position="after">
     <field name="grade" />
-
+     </field>
       </field>
     </record>
     
