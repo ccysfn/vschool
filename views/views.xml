@@ -5,12 +5,12 @@
     <record model="ir.ui.view" id="vschool.list">
       <field name="name">vschool list</field>
       <field name="model">vschool.student</field>
-      
-      <field name="inherit_id" ref="base.view_partner_form"/>
+      <field name="type">form</field>
+    
       <field name="arch" type="xml">
-<xpath expr="//field[@name='phone']" position="after">
-    <field name="grade" />
-</xpath>
+
+    <field name="ddd" />
+
       </field>
     </record>
     
