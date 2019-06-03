@@ -4,12 +4,12 @@
     
     <record model="ir.ui.view" id="vschool.list">
       <field name="name">vschool list</field>
-      <field name="model">vschool.student</field>
+      <field name="model">res.partner</field>
       <field name="type">form</field>
     
       <field name="arch" type="xml">
 
-    <field name="ddd" />
+    <field name="grade" />
 
       </field>
     </record>
@@ -19,7 +19,7 @@
     
     <record model="ir.actions.act_window" id="vschool.action_window">
       <field name="name">vschool window</field>
-      <field name="res_model">vschool.student</field>
+      <field name="res_model">res.partner</field>
       <field name="view_mode">tree,form</field>
     </record>
     
