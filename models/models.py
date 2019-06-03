@@ -2,10 +2,10 @@
 
 from odoo import models, fields, api
 
-# class vschool(models.Model):
-#     _name = 'vschool.vschool'
-
-#     name = fields.Char()
+class Student(models.Model):
+    _name = 'vschool.student'
+    _inherit = 'res.partner'
+    grade = fields.Char()
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()

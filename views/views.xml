@@ -1,28 +1,27 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-    <!--
+    
     <record model="ir.ui.view" id="vschool.list">
       <field name="name">vschool list</field>
-      <field name="model">vschool.vschool</field>
+      <field name="model">vschool.student</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
       <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
+        <field name="phone" position="after">
+    <field name="grade" />
+    </field>
       </field>
     </record>
-    -->
+    
 
     <!-- actions opening views on models -->
-    <!--
+    
     <record model="ir.actions.act_window" id="vschool.action_window">
       <field name="name">vschool window</field>
-      <field name="res_model">vschool.vschool</field>
+      <field name="res_model">vschool.student</field>
       <field name="view_mode">tree,form</field>
     </record>
-    -->
+    
 
     <!-- server action to the one above -->
     <!--
@@ -41,20 +40,21 @@
     -->
 
     <!-- Top menu item -->
-    <!--
+    
     <menuitem name="vschool" id="vschool.menu_root"/>
-    -->
+    
     <!-- menu categories -->
-    <!--
+    
     <menuitem name="Menu 1" id="vschool.menu_1" parent="vschool.menu_root"/>
     <menuitem name="Menu 2" id="vschool.menu_2" parent="vschool.menu_root"/>
-    -->
+    
     <!-- actions -->
-    <!--
+    
     <menuitem name="List" id="vschool.menu_1_list" parent="vschool.menu_1"
               action="vschool.action_window"/>
+              <!--
     <menuitem name="Server to list" id="vschool" parent="vschool.menu_2"
               action="vschool.action_server"/>
-    -->
+               -->
   </data>
 </odoo>
