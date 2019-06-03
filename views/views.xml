@@ -8,9 +8,9 @@
       
       <field name="inherit_id" ref="base.view_partner_form"/>
       <field name="arch" type="xml">
-        <field name="phone" position="after">
+<xpath expr="//field[@name='phone']" position="after">
     <field name="grade" />
-    </field>
+</xpath>
       </field>
     </record>
     
